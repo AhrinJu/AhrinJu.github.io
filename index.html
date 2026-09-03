@@ -5,28 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahrin Ju - Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 40px; background-color: #f4f4f9; color: #333; line-height: 1.6; }
-        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f6f9; color: #333; line-height: 1.6; }
+        header { background-color: #003366; color: white; padding: 20px 0; text-align: center; }
+        nav { background-color: #002244; display: flex; justify-content: center; padding: 10px 0; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .container { max-width: 800px; margin: 30px auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
         h1, h2 { color: #003366; }
         ul { list-style-type: square; padding-left: 20px; }
         table { width: 100%; border-collapse: collapse; margin-top: 20px; }
         th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
         th { background-color: #003366; color: white; }
+        footer { text-align: center; padding: 20px; color: #778899; font-size: 0.9em; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <h1>Ahrin Ju</h1>
-        <p><strong>Information Systems Student | University of Utah</strong></p>
-        <hr>
 
+    <header>
+        <h1>Ahrin Ju</h1>
+        <p>Information Systems Student | University of Utah</p>
+    </header>
+
+    <!-- Navigation Menu (Part 6 Requirement) -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
         <!-- About Me -->
-        <h2>About Me</h2>
+        <h2 id="about">About Me</h2>
         <p>I am an Information Systems major at the University of Utah with a strong passion for becoming a data analyst. My career interests lie in transforming complex organizational data into actionable business insights and data-driven solutions. I am particularly interested in exploring how generative AI and data analytics can be leveraged to streamline automated workflows and enhance decision-making processes. On the technical side, I actively utilize tools and skills such as Microsoft Excel, HTML, and Tableau to organize, analyze, and visualize data effectively. Through this portfolio, I aim to showcase my continuous growth in combining modern technology with core business strategy to solve real-world problems.</p>
 
         <!-- Skills -->
-        <h2>Skills</h2>
+        <h2 id="skills">Skills</h2>
         <ul>
             <li>Microsoft Excel</li>
             <li>HTML</li>
@@ -37,7 +52,7 @@
         </ul>
 
         <!-- Projects -->
-        <h2>Projects</h2>
+        <h2 id="projects">Projects</h2>
         <table>
             <tr>
                 <th>Project</th>
@@ -62,13 +77,16 @@
         </table>
 
         <!-- Resume -->
-        <h2>Resume</h2>
+        <h2 id="resume">Resume</h2>
         <p>Resume coming soon</p>
 
         <!-- Contact -->
-        <h2>Contact</h2>
+        <h2 id="contact">Contact</h2>
         <p>Email: u1522892@utah.edu</p>
-        <p>GitHub: <a href="https:/juahrin1.github.io" target="_blank">github.com/juahrin1</a></p>
+        <p>GitHub: <a href="https://github.com/juahrin1" target="_blank">github.com/juahrin1</a></p>
     </div>
-</body>
+
+    <footer>
+        <p>&copy; 2026 Ahrin Ju. All rights reserved.</p>
+    </body>
 </html>
